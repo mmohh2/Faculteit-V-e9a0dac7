@@ -1,16 +1,11 @@
 <?php
-echo "Van welk getal wil je de faculteit weten?";
-$a = readline("getal");
-function faculteit($number) {
-    $faculteit = 1;
-
-    for ($x = $number ; $x >= 1 ; $x--) {
-        $faculteit = $faculteit * $x;
+echo "Van welk getal wil je de faculteit weten?" . PHP_EOL;
+$a = readline();
+$i = 1;
+$b = 1;
+while ($i != $a) {
+    $b = $b * ($i + 1);
+    $i++;
     }
+    echo $b;
 
-    return $faculteit;
-}
-
-echo faculteit(4);
-echo faculteit(5);
-?>
